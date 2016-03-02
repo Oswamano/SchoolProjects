@@ -1,0 +1,49 @@
+CSE116 Fall 2013 - WRITE-UP #2
+
+Define a method named 'solution' as described below.  Define your method in
+a class named 'WriteUp' in a package named 'code'.
+
+/**************************************************************************
+ * @param s is a String (the sole parameter of the method)
+ * @return an int[] of size 3, containing the character counts as described 
+ * below.
+ *projects/CSE116/FA13/WUU2
+ 
+ * Definitions:
+ *
+ * [group0] A character ch is in group0 if and only if
+ *          ( 'a' <= ch AND ch <= 't' ) OR ( 'A' <= ch AND ch <= 'T' )  
+ *
+ * [group0A] The following characters are in group0A: 'a', 'c', 'l', and 'r'
+ *               as are their upper-case equivalents: 'A', 'C', 'L', and 'R'. 
+ *
+ * [group0B] A character which is in group0 but is not in group0A is in group0B.
+ *
+ * [group1] Any character which is not in group0 is in group1.
+ *
+ * The count of group0A characters must be in position 0 of the array,
+ * the count of group0B characters must be in position 1 of the array, and
+ * the count of group1 characters must be in position 2 of the array.
+ * 
+ * Some examples:
+ * 
+ * if s is "", then:
+ *     all entries in the array must be 0.
+ * if s is "a", then:
+ *     all entries in the array must be 0 except for entry 0, which must be 1.
+ * if s is "Baaa!", then:
+ *     entry 0 of the array must be 3 (because there are three members of group0A)
+ *     entry 1 of the array must be 1 (because there is one member of group0B), and
+ *     entry 2 of the array must be 1 (because there is one member of group1).
+ * 
+ * The only methods you may call on the String s are charAt(int) and length().
+ *
+ * You may use the static toLowerCase method defined in the Character class,
+ * which maps a char to its lower-case equivalent.  For example,
+ *     Character.toLowerCase('a') returns 'a'
+ *     Character.toLowerCase('A') returns 'a'
+ *     Character.toLowerCase('%') returns '%'
+ * 
+ * You may, if you wish, define private helper methods that you call from your
+ * character counting method.
+ **************************************************************************/

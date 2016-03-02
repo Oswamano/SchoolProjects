@@ -1,0 +1,64 @@
+CSE116 Homework #5 Practice
+
+You need to define two classes.
+
+code.WriteUp must contain definitions of the four methods as described below.
+tests.StudentTests must contain tests of the methods described below.
+
+Unlike other homework practices, you will need to submit to Web-CAT to get feedback.
+
+--------------------------------------------------------------------------------
+SYNTAX HINT:
+To write a test which verifies that a method m throws an Exception when called (on obj)
+with the argument 3:
+
+	@Test(expected=Exception.class)
+	public void test() {
+		obj.m(3);
+	}
+--------------------------------------------------------------------------------
+
+
+	/**
+	 * NAME: fullStops
+	 * @param s, a String
+	 * @return how many '.' characters appear in the String s
+	 * @throws IllegalArgumentException when s is null
+	 */
+
+	/**
+	 * NAME: doubleAdjacentCharacter
+	 * @param s, a String
+	 * @return true if and only if s contains at least two identical adjacent characters
+	 * @throws IllegalArgumentException when s is null
+	 */
+
+	/**
+	 * NAME: palindrome
+	 * @param s, a String
+	 * @return true if and only if s is a palindrome
+	 * @throws IllegalArgumentException when s is null
+	 */
+
+	/**
+	 * NAME: gradeMapper
+	 * @param numericGrade, an int
+	 * @return the letter grade corresponding to the numeric grade,
+	 *         according to the following table:
+	 *      numericGrade
+	 *         >=  but <  letter grade
+	 *        ---    ---  ------------
+	 *          0     50  F
+	 *         50     55  D
+	 *         55     60  C-
+	 *         60     65  C
+	 *         65     70  C+
+	 *         70     75  B-
+	 *         75     80  B
+	 *         80     85  B+
+	 *         85     90  A-
+	 *         90     95  A
+	 *         95    100  A+ (the 100 is inclusive: <=)
+	 * @throws IllegalArgumentException when numericGrade is less than 
+	 *         zero or greater than one hundred
+	 */

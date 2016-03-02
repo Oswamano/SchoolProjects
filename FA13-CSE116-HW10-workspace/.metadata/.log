@@ -1,0 +1,9 @@
+!SESSION 2013-12-03 11:01:31.550 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data FA13-CSE116-HW10-workspace
+
+!ENTRY org.eclipse.ui 4 4 2013-12-03 11:29:07.232
+!MESSAGE Plug-in 'org.eclipse.pde.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.ui.projectConfigure' is invalid): org.eclipse.pde.ui.ConvertedProjectWizard

@@ -1,0 +1,19 @@
+package lab6;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class EventHandler implements ActionListener {
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		lab6.Driver.shuffle();
+		lab6.Driver.text();
+		
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;SP12-CSE116-WU4-Grading&apos;" deleteContents="true" description="Delete resource &apos;SP12-CSE116-WU4-Grading&apos;" element1="/SP12-CSE116-WU4-Grading" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1329744904872"/>&#x0A;<refactoring comment="Delete resource &apos;asd&apos;" deleteContents="true" description="Delete resource &apos;asd&apos;" element1="/asd" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1329745114916"/>
+</session>

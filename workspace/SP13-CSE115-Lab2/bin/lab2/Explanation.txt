@@ -1,0 +1,10 @@
+CSE115 - Spring 2013 - Lab 2
+
+Write your name here:
+
+Write your description and explanation from part B below the
+following line.
+------------------------------------------------------------
+It worked this way because... i)In part one, the reason half the creatures did not move is because they were started then stopped instantly.
+There was no time gap between the start and stop calls, so as soon as the creature started moving it stopped.
+ii).In the second part, once the stop calls were removed, there was no reason for the creatures to stop, so all of the creatures kept moving.

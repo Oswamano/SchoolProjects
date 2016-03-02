@@ -1,0 +1,13 @@
+package code;
+
+public class Solution {
+
+	public Object question1() {
+		return "";
+	}
+
+	public Object question2() {
+		return "";
+	}
+
+}

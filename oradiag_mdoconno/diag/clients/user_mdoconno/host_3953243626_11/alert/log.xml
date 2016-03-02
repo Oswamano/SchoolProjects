@@ -1,0 +1,97 @@
+<msg time='2015-06-11T11:22:49.635-04:00' org_id='oracle' comp_id='clients'
+ msg_id='dbgrmmdcrf_create_relation_full:1695:1503427940' type='NOTIFICATION' group='destroy'
+ level='16' host_id='timberlake.cse.buffalo.edu' host_addr='128.205.36.8'
+ version='1'>
+ <txt>Create Relation ADR_CONTROL
+ </txt>
+</msg>
+<msg time='2015-06-11T11:22:51.151-04:00' org_id='oracle' comp_id='clients'
+ msg_id='dbgrmmdcrf_create_relation_full:1695:1503427940' type='NOTIFICATION' group='destroy'
+ level='16' host_id='timberlake.cse.buffalo.edu' host_addr='128.205.36.8'>
+ <txt>Create Relation INC_METER_IMPT_DEF
+ </txt>
+</msg>
+<msg time='2015-06-11T11:22:52.344-04:00' org_id='oracle' comp_id='clients'
+ msg_id='dbgrmmdcrf_create_relation_full:1695:1503427940' type='NOTIFICATION' group='destroy'
+ level='16' host_id='timberlake.cse.buffalo.edu' host_addr='128.205.36.8'>
+ <txt>Create Relation INC_METER_PK_IMPTS
+ </txt>
+</msg>
+<msg time='2015-06-11T11:22:52.879-04:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='timberlake.cse.buffalo.edu'
+ host_addr='128.205.36.8'>
+ <txt>Directory does not exist for read/write [/util/oracle/product/current/client_1/log] []
+ </txt>
+</msg>
+<msg time='2015-06-11T11:23:34.881-04:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='timberlake.cse.buffalo.edu'
+ host_addr='128.205.36.8'>
+ <txt>Directory does not exist for read/write [/util/oracle/product/current/client_1/log] []
+ </txt>
+</msg>
+<msg time='2015-06-11T11:24:32.516-04:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='timberlake.cse.buffalo.edu'
+ host_addr='128.205.36.8'>
+ <txt>Directory does not exist for read/write [/util/oracle/product/current/client_1/log] []
+ </txt>
+</msg>
+<msg time='2015-06-11T11:27:07.053-04:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='timberlake.cse.buffalo.edu'
+ host_addr='128.205.36.8'>
+ <txt>Directory does not exist for read/write [/util/oracle/product/current/client_1/log] []
+ </txt>
+</msg>
+<msg time='2015-06-11T11:31:45.091-04:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='timberlake.cse.buffalo.edu'
+ host_addr='128.205.36.8'>
+ <txt>Directory does not exist for read/write [/util/oracle/product/current/client_1/log] []
+ </txt>
+</msg>
+<msg time='2015-06-16T11:49:05.540-04:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='timberlake.cse.buffalo.edu'
+ host_addr='128.205.36.8'>
+ <txt>Directory does not exist for read/write [/util/oracle/product/current/client_1/log] []
+ </txt>
+</msg>
+<msg time='2015-06-16T11:49:34.323-04:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='timberlake.cse.buffalo.edu'
+ host_addr='128.205.36.8'>
+ <txt>Directory does not exist for read/write [/util/oracle/product/current/client_1/log] []
+ </txt>
+</msg>
+<msg time='2015-06-16T11:50:10.111-04:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='timberlake.cse.buffalo.edu'
+ host_addr='128.205.36.8'>
+ <txt>Directory does not exist for read/write [/util/oracle/product/current/client_1/log] []
+ </txt>
+</msg>
+<msg time='2015-06-16T11:50:34.129-04:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='timberlake.cse.buffalo.edu'
+ host_addr='128.205.36.8'>
+ <txt>Directory does not exist for read/write [/util/oracle/product/current/client_1/log] []
+ </txt>
+</msg>
+<msg time='2015-06-16T11:51:11.426-04:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='timberlake.cse.buffalo.edu'
+ host_addr='128.205.36.8'>
+ <txt>Directory does not exist for read/write [/util/oracle/product/current/client_1/log] []
+ </txt>
+</msg>
+<msg time='2015-06-16T11:52:13.181-04:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='timberlake.cse.buffalo.edu'
+ host_addr='128.205.36.8'>
+ <txt>Directory does not exist for read/write [/util/oracle/product/current/client_1/log] []
+ </txt>
+</msg>
+<msg time='2015-06-18T12:04:45.899-04:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='timberlake.cse.buffalo.edu'
+ host_addr='128.205.36.8'>
+ <txt>Directory does not exist for read/write [/util/oracle/product/current/client_1/log] []
+ </txt>
+</msg>
+<msg time='2015-06-18T12:06:05.061-04:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='timberlake.cse.buffalo.edu'
+ host_addr='128.205.36.8'>
+ <txt>Directory does not exist for read/write [/util/oracle/product/current/client_1/log] []
+ </txt>
+</msg>

@@ -1,0 +1,13 @@
+﻿Matthew O’Connor Cse 474 #50000250 Homework One
+Tom Ludwig Samuel Kriever
+
+1.) Assuming we always pass the the algorithm a full and complete set of data with all tributes, we will always enter one of the conditional for loops. We will always enter one of the loops because a and not a cannot both be equal to x. Since we always enter one of the loops p will always be set to false. Therefore our first prediction will always be false
+
+2.) If c only had one attribute and we removed it, than c  would be all accepting. If c was all accepting than the whole algorithm would break down and wouldn't make sense anymore.
+
+3.) Assuming proof two is true, removing a mistake on a negative example would remove an attribute from c, which we already disproved in proof two. Therefore we must always remove on a positive example. 
+
+
+4.)We can’t remove both values of an attribute because that would mean nothing is accepted by c. If we cant remove both values of an attribute, we will also hit the remove statement with something in Q. Also removing the empty set would technically be removing nothing, so therefore you must always remove greater than one attributes to actually be removing something, ad you cannot remove fractions of attributes.
+
+5.) D items have to be added to Q on the first mistake. This is because the loop structure causes it to parse through everything before it hits the remove statement. Since nothing is removed from L yet, we will add either an attribute or not an attribute to the removal set. Assuming proof 2 is true, we cant remove attributes in the target set, giving us an upper bound of d removals. This means we we always remove either on attribute or a not attribute but not both, which is d removals.

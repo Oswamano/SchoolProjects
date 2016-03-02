@@ -1,0 +1,13 @@
+package code;
+
+public class Solution {
+
+	public String question1() {
+		return "";
+	}
+
+	public String question2() {
+		return "";
+	}
+
+}

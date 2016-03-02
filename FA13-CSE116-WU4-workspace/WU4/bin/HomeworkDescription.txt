@@ -1,0 +1,39 @@
+CSE116 Write-up #4
+
+
+GENERAL INSTRUCTIONS:
+--------------------
+Your task is to define a class with one method, described below.
+
+Your class must be defined in a named package placed in the 'src' folder.
+You may NOT name the package 'tests' or 'util', but aside from that any
+valid Java package name is acceptable.
+
+You may choose any valid Java class name for your class.
+
+You may choose any valid Java method names for your methods.  Your methods may
+be either static or non-static, but if non-static your class must provide a 
+no-argument constructor (either the default constructor, or an explicit one).
+
+/**************************************************************************
+ * @param a String denoting a path on the local filesystem, the input file
+ * @returns a HashMap<String,Integer> containing author-to-count mappings
+ *
+ * This method must read the contents of a file (identified by inputFilePath),
+ * one char at a time, find the authors in the file, and keep track of author
+ * counts in a java.util.HashMap<String,Integer>. 
+ * 
+ * An author is defined as a contiguous sequence of characters that appear
+ * between an opening {A} tag and its corresponding closing {a} tag.
+ *
+ * You MUST use the state-transition approach (explained in recitation)
+ * for solving this problem, since learning this technique was part of
+ * the goal of this homework.
+ *
+ * You MUST also draw a suitable state-transition diagram for your solution,
+ * and hand it in at the conclusion of your write-up.
+ *   
+ * You must use only CharacterFromFileReader to read characters from the input
+ * file.
+ *
+ **************************************************************************/

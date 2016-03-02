@@ -1,0 +1,20 @@
+CREATE OR REPLACE FUNCTION get_total_reps(emp_id FN_EMPLOYEES.EMPLOYEE_ID%TYPE)
+RETURN NUMBER IS
+IS
+   reps int := 0;
+   cursor emp is
+      select  EMPLOYEE_ID from employees 
+      where   manager_id = EMP_ID;
+begin
+
+     for empe in emp
+     loop
+         reps := reps+1;
+     end loop;
+     
+     RETURN 0;
+end;
+
+-- creates a cursor that counts through the number of employees
+-- cursor increments reps by 1 for everything it counts
+-- returns the count

@@ -1,0 +1,33 @@
+package code;
+import code.LRStruct.*;
+public class MathyVis implements  IAlgo<Integer,Integer,Object>{
+
+	@Override
+	public Integer emptyCase(LRStruct<Integer> host, Object arg) {
+		
+		return 0;
+	}
+
+	@Override
+	public Integer nonEmptyCase(LRStruct<Integer> host, Object arg) {
+		// TODO Auto-generated method stub
+		return host.getDatum()*5+host.getRest().execute(this, arg);
+	} 
+	
+	
+	public static void main(String[] args) {
+		LRStruct<Integer> struc = new LRStruct<Integer>();
+		struc.insertFront(5);
+		struc.insertFront(5);
+		struc.insertFront(5);
+		struc.insertFront(5);
+		struc.insertFront(1);
+		int x = struc.execute(new MathyVis(), null);
+		System.out.println("The sum of the fives is:"+x);
+		String y = struc.execute(new Vis(), null);
+		System.out.println(y);
+		int pen = struc.execute(new fivevis(), 10);
+		System.out.println(pen);
+		
+	}
+}

@@ -1,0 +1,26 @@
+package code;
+
+public class Mystery {
+	
+	public static void main(String[] args) {
+		System.out.println("Q1: "+q1());
+		System.out.println("Q2: "+q2());
+	}
+	
+	public static String q1() {
+		B b = new B(3);
+		A a1 = new A(b);
+		A a2 = new A(b);
+		a1.d();
+		return a1.toString() + ":" + a2.toString();		
+	}
+	
+	public static String q2() {
+		B b1 = new B(3);
+		B b2 = new B(3);
+		A a1 = new A(b1);
+		A a2 = new A(b2);
+		a1.d();
+		return a1.toString() + ":" + a2.toString();		
+	}
+}

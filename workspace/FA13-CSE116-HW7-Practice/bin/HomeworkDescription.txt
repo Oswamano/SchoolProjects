@@ -1,0 +1,65 @@
+CSE116 Homework #7 Practice
+
+You need to define three classes.
+
+code.WriteUp must define a visitor as defined below.
+code.Mapper must define a UnaryFunction<Integer,String>, as described below.
+tests.StudentTests must contain tests of visitor.
+
+Like the homework 5 and 6 practices, you will need to submit to Web-CAT to get feedback.
+
+--------------------------------------------------------------------------------
+In this exercise you will get practice working with generic classes.
+
+STEP 1
+------
+Write tests for the visitor you are about the define.  Stub out code as necessary.
+
+STEP 2
+------
+The UnaryFunction interface is parameterized by its domain and range classes:
+
+    public interface UnaryFunction<T1, T2> {
+	    public T2 apply(T1 datum);
+    }
+    
+You need to define a class named Mapper which implements UnaryFunction<Integer,String>.
+This class will define a single method, with the following header:
+
+        public String apply(Integer datum)
+        
+Define the method so that it does the numeric grade to letter grade mapping from
+the HW5 practice.
+
+STEP 3
+------
+The visitor that you are writing must be named WriteUp.  The visitor will be parameterized
+by a Domain type and a Range type, as in:
+
+    WriteUp<Domain,Range>
+    
+and it will implement IAlgo<LRStruct<Range>,Domain,UnaryFunction<Domain,Range>>
+
+The visitor must operate over an LRStruct with elements of the Domain type, and
+return an LRStruct with elements of the Range type.  The UnaryFunction maps each Domain
+element of the original list to a corresponding Range element for insertion into 
+the answer list.
+
+For example, executing the following code:
+	WriteUp<Integer, String> visitor = new WriteUp<Integer,String>();
+	UnaryFunction<Integer,String> function = new Mapper();
+	LRStruct<Integer> numericGrades = new LRStruct<Integer>().insertFront(99).insertFront(94).insertFront(89).insertFront(84).insertFront(79).insertFront(74).insertFront(69).insertFront(64).insertFront(59).insertFront(54).insertFront(49);
+	System.out.println(numericGrades);
+	LRStruct<String> letterGrades = numericGrades.execute(visitor, function);
+	System.out.println(letterGrades);
+
+produces the following output:
+	(49 54 59 64 69 74 79 84 89 94 99)
+	(F D C- C C+ B- B B+ A- A A+)
+
+STEP 4
+------
+Submit your code to Web-CAT for evaluation.
+
+
+--------------------------------------------------------------------------------

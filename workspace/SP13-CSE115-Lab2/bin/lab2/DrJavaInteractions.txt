@@ -1,0 +1,39 @@
+CSE115 - Spring 2013 - Lab 2
+
+Save your work from lab task A in this file.
+
+Write your name here:
+Matthew O'Connor
+Your TA will instruct you on how to copy/paste
+from the DrJava InteractionsPane into this file,
+below the following line.
+------------------------------------------------------------
+example1.Terrarium t;
+t=new example1.Terrarium();
+example1.Ant a;
+a= new example1.Ant();
+example1.Ant b;
+b= new example1.Ant();
+t.add(a);
+t.add(b);
+example1.Butterfly c;
+c= new example1.Butterfly();
+example1.Butterfly d;
+d= new example1.Butterfly();
+t.add(c);
+t.add(d);
+example1.Caterpillar e;
+e= new example1.Caterpillar();
+example1.Caterpillar f;
+f= new example1.Caterpillar();
+t.add(e);
+t.add(f);
+a.start();
+b.start();
+c.start();
+d.start();
+e.start();
+f.start();
+a.stop();
+c.stop();
+f.stop();

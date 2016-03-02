@@ -1,0 +1,16 @@
+
+CREATE OR REPLACE FUNCTION avg_dept_sal(dept_id FL_DEPARTMENTS.DEPARTMENT_ID%TYPE)
+RETURN NUMBER IS
+RET_INTEGER;
+BEGIN
+declare
+empsal integer =0;
+select into empsal
+FL_EMPLOYEES.SALARY
+where FL_DEPT_ID = dept_ID
+RET_INTEGER = AVG(VCOUNT);
+	RETURN 0;
+END;
+
+-- creates a table of all employees who have a department that is the one you want
+-- takes an average of this table and returns it

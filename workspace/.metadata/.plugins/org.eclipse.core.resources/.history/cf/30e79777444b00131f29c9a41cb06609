@@ -1,0 +1,9 @@
+package code;
+
+public class Map {
+	public Boolean greaterThanFive(int x){
+		
+		return false;
+	}
+
+}

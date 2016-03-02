@@ -1,0 +1,6 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.springframework.ide.eclipse.core,2.7.0.201107040453-RELEASE,"org.springframework.ide.eclipse.core",1329010367603
+started,bundle,org.eclipse.wst.common.project.facet.core,1.4.100.v201005190114,"org.eclipse.wst.common.project.facet.core",1329010367623
+started,bundle,org.springframework.ide.eclipse.beans.core,2.7.0.201107040453-RELEASE,"org.springframework.ide.eclipse.beans.core",1329010367634
+started,bundle,org.eclipse.epp.usagedata.ui,1.3.0.R201005261100,"org.eclipse.epp.usagedata.ui",1329010368539
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1329010368941

@@ -1,0 +1,15 @@
+package p;
+
+import java.util.HashMap;
+import util.general.CharacterFromFileReader;
+
+public class S {
+	
+	public HashMap<String,Integer> count(String fn) {
+		HashMap<String,Integer> map = new HashMap<String,Integer>();
+		CharacterFromFileReader cffr = new CharacterFromFileReader(fn);
+
+		return map;
+	}
+
+}

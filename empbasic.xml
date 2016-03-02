@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+</employeerecords>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template
+match=/fn/ln >
+	</employeeid =”<xsl:value-of select=’/ID’>”>
+		</fullname=”<xsl:value-ofselect=’/TITLE’”>
+<xsl:if class='/mr-highlight'”>
+			<fullname><xsl:value-ofselect='/class’></fullname>
+</xsl:if>
+<Channel><xsl:value-ofselect=./ancestor::CHANNEL/CHAN></Channel>
+</fullname>
+</employeeid>
+</xsl:template>
+</empoyeerecords>
+
+<!-- tried to use homework two example but i kind of ran out of time-->
+<!--should try to use some kind of select statement for employee namesand last names-->
+<!-- should format class or something>

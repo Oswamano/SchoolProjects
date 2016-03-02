@@ -1,0 +1,33 @@
+package code;
+
+public class WriteUp {
+
+	public int[] countCharacters(String s) {
+		int[] array = new int[3];
+		for (int i=0; i<s.length(); i++) {
+			char c = Character.toLowerCase(s.charAt(i));
+			if (isVowel(c)) {
+				array[0]++;
+			}
+			else if (isConsonant(c)) {
+				array[1]++;
+			}
+			else {
+				array[2]++;
+			}
+		}
+		return array;
+	}
+	
+	private boolean isLetter(char c) {
+		return c >= 'a' && c <= 't';
+	}
+	
+	private boolean isVowel(char c) {
+		return c == 'a' || c =='c' || c =='r' || c =='l';
+	}
+
+	private boolean isConsonant(char c) {
+		return isLetter(c) && ! isVowel(c);
+	}
+}

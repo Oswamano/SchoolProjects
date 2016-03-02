@@ -1,0 +1,23 @@
+package code;
+
+import code.LRStruct.*;
+
+@SuppressWarnings("hiding")
+public class WriteUp <Integer, String> implements IAlgo<LRStruct<String>, Integer, UnaryFunction<Integer, String>> {
+	private Mapper mappy = new Mapper();
+	@Override
+	public LRStruct<String> emptyCase(LRStruct<Integer> host,
+			UnaryFunction<Integer, String> arg) {
+		
+		return new LRStruct<String>();
+	}
+
+	@Override
+	public LRStruct<String> nonEmptyCase(LRStruct<Integer> host,
+			UnaryFunction<Integer, String> arg) {
+		
+		  return host.getRest().execute(this, arg).insertFront(arg.apply(host.getDatum()));
+
+
+	}
+}

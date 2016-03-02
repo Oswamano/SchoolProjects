@@ -1,0 +1,22 @@
+package code;
+
+public class B {
+	
+	private int _x;
+	
+	public B(int x) {
+		this.set(x);
+	}
+
+	public void set(int x) {
+		_x = x;
+	}
+	
+	public int get() {
+		return _x;
+	}
+
+	@Override public String toString() {
+		return ""+_x;
+	}
+}

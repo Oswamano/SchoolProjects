@@ -1,0 +1,30 @@
+CSE116 Write-Up #5
+
+You need to define two classes:
+
+1) code.WriteUp must contain a definition of the method described below.
+2) tests.StudentTests must contain tests of the method described below.
+
+--------------------------------------------------------------------------------
+
+	/**
+	 * NAME: bmiCategory
+	 * @param bmi, a double
+	 * @return a String description of the bmi, according to the
+	 * table below.
+	 * @throws IllegalArgumentException when bmi is less than 0
+	 *
+	 * TABLE
+	 *
+	 *    bmi     bmi
+	 *    >=  but  <      String description
+	 *   ----     ----    ------------
+	 *    0.0     18.5    Underweight
+	 *   18.5     25.0    Normal
+	 *   25.0     30.0    Overweight
+	 *   30.0             Obese
+	 *
+	 */
+
+--------------------------------------------------------------------------------
+	 

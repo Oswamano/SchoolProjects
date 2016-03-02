@@ -1,0 +1,27 @@
+CSE116 Write-Up #6
+
+You need to define two classes:
+
+code.WriteUp must define a visitor as defined below.
+tests.StudentTests must contain tests of visitor.
+
+Like the homework 5 practice, you will need to submit to Web-CAT to get feedback.
+
+--------------------------------------------------------------------------------
+The visitor must operate over an LRStruct<String>.  It must return, as an
+Integer, the sum of the lengths of all the Strings contained in the list.
+
+Recall that the length() method of the String class returns, as an int, the
+number of characters in the String on which it is called.  For example:
+    "".length() is 0
+    "Fred".length() is 4
+
+Note that the "optional" argument of the execute method is not used; use Object
+in the declaration, and pass null as an argument when executing the visitor on
+the list.
+--------------------------------------------------------------------------------
+Examples:
+The answer for the list () is 0
+The answer for the list ("Fred" "Wilma") is 9
+The answer for the list ("Fred" "Wilma" "Pebbles" "Betty" "Barney") is 27
+--------------------------------------------------------------------------------

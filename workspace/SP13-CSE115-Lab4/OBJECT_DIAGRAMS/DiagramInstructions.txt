@@ -1,0 +1,1 @@
+Put your two object diagrams in the folder named OBJECT_DIAGRAMS.

@@ -1,0 +1,4 @@
+SELECT d.department_name as dept, count(e.job_id) as cnt, e.department_id as depid 
+FROM FL_EMPLOYEES e, FL_DEPARTMENTS d 
+WHERE e.department_id = d.department_id group by d.department_name, e.department_id
+order by depid;

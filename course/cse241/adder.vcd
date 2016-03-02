@@ -1,0 +1,140 @@
+#! /util/verilog-0.9.7/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x15012350 .scope module, "ex2_1" "ex2_1" 2 1;
+ .timescale 0 0;
+v0x15036b90_0 .net "carry", 0 0, L_0x15038530; 1 drivers
+v0x15036c10_0 .net "inA", 3 0, v0x150149b0_0; 1 drivers
+v0x15036ce0_0 .net "inB", 3 0, v0x15034950_0; 1 drivers
+RS_0x2b6d31704108 .resolv tri, L_0x15037270, L_0x150378c0, L_0x15037fd0, L_0x15038670;
+v0x15036db0_0 .net8 "sum", 3 0, RS_0x2b6d31704108; 4 drivers
+S_0x15034cc0 .scope module, "a4" "adder4" 2 7, 2 12, S_0x15012350;
+ .timescale 0 0;
+v0x150366b0_0 .net "c0", 0 0, L_0x15037170; 1 drivers
+v0x150367a0_0 .net "c1", 0 0, L_0x150377c0; 1 drivers
+v0x15036870_0 .net "c2", 0 0, L_0x15037ed0; 1 drivers
+v0x15036940_0 .alias "carry", 0 0, v0x15036b90_0;
+v0x15036a10_0 .alias "inA", 3 0, v0x15036c10_0;
+v0x15036a90_0 .alias "inB", 3 0, v0x15036ce0_0;
+v0x15036b10_0 .alias "sum", 3 0, v0x15036db0_0;
+L_0x15037270 .part/pv L_0x15036ee0, 0, 1, 4;
+L_0x15037360 .part v0x150149b0_0, 0, 1;
+L_0x15037400 .part v0x15034950_0, 0, 1;
+L_0x150378c0 .part/pv L_0x15037540, 1, 1, 4;
+L_0x150379f0 .part v0x150149b0_0, 1, 1;
+L_0x15037b20 .part v0x15034950_0, 1, 1;
+L_0x15037fd0 .part/pv L_0x15037cf0, 2, 1, 4;
+L_0x150380c0 .part v0x150149b0_0, 2, 1;
+L_0x150381b0 .part v0x15034950_0, 2, 1;
+L_0x15038670 .part/pv L_0x150382b0, 3, 1, 4;
+L_0x150387c0 .part v0x150149b0_0, 3, 1;
+L_0x15038860 .part v0x15034950_0, 3, 1;
+S_0x15036080 .scope module, "a0" "adder1" 2 17, 2 24, S_0x15034cc0;
+ .timescale 0 0;
+L_0x15036e80 .functor XOR 1, L_0x15037360, L_0x15037400, C4<0>, C4<0>;
+L_0x15036ee0 .functor XOR 1, L_0x15036e80, C4<0>, C4<0>, C4<0>;
+L_0x15036f90 .functor AND 1, L_0x15036e80, C4<0>, C4<1>, C4<1>;
+L_0x15037070 .functor AND 1, L_0x15037360, L_0x15037400, C4<1>, C4<1>;
+L_0x15037170 .functor OR 1, L_0x15036f90, L_0x15037070, C4<0>, C4<0>;
+v0x15036170_0 .net "a", 0 0, L_0x15037360; 1 drivers
+v0x15036230_0 .net "b", 0 0, L_0x15037400; 1 drivers
+v0x150362d0_0 .net "cin", 0 0, C4<0>; 1 drivers
+v0x15036370_0 .alias "cout", 0 0, v0x150366b0_0;
+v0x15036420_0 .net "s", 0 0, L_0x15036ee0; 1 drivers
+v0x150364a0_0 .net "t1", 0 0, L_0x15036e80; 1 drivers
+v0x15036520_0 .net "t2", 0 0, L_0x15036f90; 1 drivers
+v0x150365c0_0 .net "t3", 0 0, L_0x15037070; 1 drivers
+S_0x15035a50 .scope module, "a1" "adder1" 2 18, 2 24, S_0x15034cc0;
+ .timescale 0 0;
+L_0x150374e0 .functor XOR 1, L_0x150379f0, L_0x15037b20, C4<0>, C4<0>;
+L_0x15037540 .functor XOR 1, L_0x150374e0, L_0x15037170, C4<0>, C4<0>;
+L_0x15037680 .functor AND 1, L_0x150374e0, L_0x15037170, C4<1>, C4<1>;
+L_0x150376e0 .functor AND 1, L_0x150379f0, L_0x15037b20, C4<1>, C4<1>;
+L_0x150377c0 .functor OR 1, L_0x15037680, L_0x150376e0, C4<0>, C4<0>;
+v0x15035b40_0 .net "a", 0 0, L_0x150379f0; 1 drivers
+v0x15035c00_0 .net "b", 0 0, L_0x15037b20; 1 drivers
+v0x15035ca0_0 .alias "cin", 0 0, v0x150366b0_0;
+v0x15035d40_0 .alias "cout", 0 0, v0x150367a0_0;
+v0x15035df0_0 .net "s", 0 0, L_0x15037540; 1 drivers
+v0x15035e70_0 .net "t1", 0 0, L_0x150374e0; 1 drivers
+v0x15035ef0_0 .net "t2", 0 0, L_0x15037680; 1 drivers
+v0x15035f90_0 .net "t3", 0 0, L_0x150376e0; 1 drivers
+S_0x15035420 .scope module, "a2" "adder1" 2 19, 2 24, S_0x15034cc0;
+ .timescale 0 0;
+L_0x15037c90 .functor XOR 1, L_0x150380c0, L_0x150381b0, C4<0>, C4<0>;
+L_0x15037cf0 .functor XOR 1, L_0x15037c90, L_0x150377c0, C4<0>, C4<0>;
+L_0x15037de0 .functor AND 1, L_0x15037c90, L_0x150377c0, C4<1>, C4<1>;
+L_0x15037e40 .functor AND 1, L_0x150380c0, L_0x150381b0, C4<1>, C4<1>;
+L_0x15037ed0 .functor OR 1, L_0x15037de0, L_0x15037e40, C4<0>, C4<0>;
+v0x15035510_0 .net "a", 0 0, L_0x150380c0; 1 drivers
+v0x150355d0_0 .net "b", 0 0, L_0x150381b0; 1 drivers
+v0x15035670_0 .alias "cin", 0 0, v0x150367a0_0;
+v0x15035710_0 .alias "cout", 0 0, v0x15036870_0;
+v0x150357c0_0 .net "s", 0 0, L_0x15037cf0; 1 drivers
+v0x15035840_0 .net "t1", 0 0, L_0x15037c90; 1 drivers
+v0x150358c0_0 .net "t2", 0 0, L_0x15037de0; 1 drivers
+v0x15035960_0 .net "t3", 0 0, L_0x15037e40; 1 drivers
+S_0x15034db0 .scope module, "a3" "adder1" 2 20, 2 24, S_0x15034cc0;
+ .timescale 0 0;
+L_0x15038250 .functor XOR 1, L_0x150387c0, L_0x15038860, C4<0>, C4<0>;
+L_0x150382b0 .functor XOR 1, L_0x15038250, L_0x15037ed0, C4<0>, C4<0>;
+L_0x150383f0 .functor AND 1, L_0x15038250, L_0x15037ed0, C4<1>, C4<1>;
+L_0x15038450 .functor AND 1, L_0x150387c0, L_0x15038860, C4<1>, C4<1>;
+L_0x15038530 .functor OR 1, L_0x150383f0, L_0x15038450, C4<0>, C4<0>;
+v0x15034ea0_0 .net "a", 0 0, L_0x150387c0; 1 drivers
+v0x15034f60_0 .net "b", 0 0, L_0x15038860; 1 drivers
+v0x15035000_0 .alias "cin", 0 0, v0x15036870_0;
+v0x150350a0_0 .alias "cout", 0 0, v0x15036b90_0;
+v0x15035150_0 .net "s", 0 0, L_0x150382b0; 1 drivers
+v0x150351d0_0 .net "t1", 0 0, L_0x15038250; 1 drivers
+v0x15035290_0 .net "t2", 0 0, L_0x150383f0; 1 drivers
+v0x15035330_0 .net "t3", 0 0, L_0x15038450; 1 drivers
+S_0x15011880 .scope module, "at" "adderTest" 2 8, 2 36, S_0x15012350;
+ .timescale 0 0;
+v0x150149b0_0 .var "A", 3 0;
+v0x15034950_0 .var "B", 3 0;
+v0x150349f0_0 .alias "carry", 0 0, v0x15036b90_0;
+v0x15034a90_0 .var/i "i", 31 0;
+v0x15034b40_0 .var/i "j", 31 0;
+v0x15034be0_0 .alias "sum", 3 0, v0x15036db0_0;
+    .scope S_0x15011880;
+T_0 ;
+    %vpi_call 2 44 "$monitor", "A: %d  B: %d sum: %d  carry: %d", v0x150149b0_0, v0x15034950_0, v0x15034be0_0, v0x150349f0_0;
+    %vpi_call 2 45 "$dumpfile", "adder_wv.vcd";
+    %vpi_call 2 46 "$dumpvars";
+    %set/v v0x15034a90_0, 0, 32;
+T_0.0 ;
+    %load/v 8, v0x15034a90_0, 32;
+   %cmpi/s 8, 16, 32;
+    %jmp/0xz T_0.1, 5;
+    %set/v v0x15034b40_0, 0, 32;
+T_0.2 ;
+    %load/v 8, v0x15034b40_0, 32;
+   %cmpi/s 8, 16, 32;
+    %jmp/0xz T_0.3, 5;
+    %load/v 8, v0x15034a90_0, 32;
+    %set/v v0x150149b0_0, 8, 4;
+    %load/v 8, v0x15034b40_0, 32;
+    %set/v v0x15034950_0, 8, 4;
+    %delay 1, 0;
+    %ix/load 0, 1, 0;
+    %load/vp0/s 8, v0x15034b40_0, 32;
+    %set/v v0x15034b40_0, 8, 32;
+    %jmp T_0.2;
+T_0.3 ;
+    %ix/load 0, 1, 0;
+    %load/vp0/s 8, v0x15034a90_0, 32;
+    %set/v v0x15034a90_0, 8, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %vpi_call 2 50 "$finish";
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "adder.v";

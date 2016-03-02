@@ -1,0 +1,10 @@
+CREATE OR REPLACE PROCEDURE emp_transfer(
+empid IN FN_EMPLOYEES.EMPLOYEE_ID%TYPE,
+jid IN FN_EMPLOYEES.JOB_ID%TYPE)
+AS
+-- updates employees job id to the new department he should be in
+-- doesnt need to delete the employee since all it needs to do is alter his department number
+-- also adds the new job history by using insert statements
+
+BEGIN
+END;

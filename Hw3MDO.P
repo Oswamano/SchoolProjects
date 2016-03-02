@@ -1,0 +1,12 @@
+%Matthew O'Connor Homework 3 
+
+% Facts
+edge(a,b).
+edge(a,c).
+edge(b,d).
+edge(d,c).
+
+% Rules
+path(S,N,1) :- edge(S,N).
+path(S,N,M) :- U is M-1, edge( S,C), path(C,N,U).
+path(S,N) :- edge(S,N).

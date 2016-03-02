@@ -1,0 +1,5 @@
+
+select COUNT(E.JOB_ID), D.JOB_TITLE 
+from FL_EMPLOYEES E, FL_JOBS D
+where (E.DEPARTMENT_ID = (50)) and( E.JOB_ID = D.JOB_ID)
+group by(D.JOB_TITLE);

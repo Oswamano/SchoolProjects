@@ -1,0 +1,13 @@
+package code;
+
+public class Solution {
+
+	public String question1() {
+		return "a(3):a(6)";
+	}
+
+	public String question2() {
+		return "a(3):a(6)";
+	}
+
+}

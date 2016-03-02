@@ -1,0 +1,19 @@
+package code;
+
+public class A {
+	
+	private B _x;
+	
+	public A(B x) {
+		_x = x;
+	}
+	
+	public void d() {
+		_x.set(_x.get() * 2);
+	}
+	
+	@Override public String toString() {
+		return "a("+_x+")";
+	}
+
+}

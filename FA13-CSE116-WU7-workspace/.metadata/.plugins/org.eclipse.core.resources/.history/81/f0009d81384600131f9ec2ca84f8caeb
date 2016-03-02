@@ -1,0 +1,15 @@
+import code.UnaryFunction;
+
+
+public class EvenLength implements UnaryFunction<String,Boolean> {
+
+	@Override
+	public Boolean apply(String datum) {
+		Boolean isEven=false;
+		if (datum.length()%2==0){
+			isEven=true;
+		}
+		return isEven;
+	}
+
+}

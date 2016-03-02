@@ -1,0 +1,23 @@
+CSE116 Fall 2013 - WRITE-UP #1
+
+Define a method named 'solution', in a class named 'WriteUp', in a package named 'code',
+as follows:
+
+	/**
+	 * @param s, a String
+	 * @param c1, a character
+	 * @param c2, a character
+	 * @return the character (c1 or c2) that occurs more in the String s; if
+	 *         c1 and c2 occurs equally often in s, return c1. 
+	 *  
+	 * Keep in mind that the String s can be *any* valid Java String.
+	 * 
+	 * Here are some examples:
+	 * 
+	 * solution("",'a','b') must return 'a'
+	 * solution("an aardvark is able",'a','b') must return 'a'
+	 * solution("b..b..blistering blue barnacles",'a','b') must return 'b'
+	 * solution("AAAb",'a','b') must return 'b' (since 'A' != 'a')
+	 * 
+	 * The only methods you may call on the String s are charAt(int) and length().
+	 */

@@ -1,0 +1,21 @@
+CREATE OR REPLACE PROCEDURE emp_insert(
+fname IN FN_EMPLOYEES.FIRST_NAME%TYPE,
+lname IN FN_EMPLOYEES.LAST_NAME%TYPE,
+email IN FN_EMPLOYEES.EMAIL%TYPE,
+phone IN FN_EMPLOYEES.PHONE_NUMBER%TYPE,
+hiredate IN FN_EMPLOYEES.HIRE_DATE%TYPE,
+jobid IN FN_EMPLOYEES.JOB_ID%TYPE,
+salary IN FN_EMLOYEES.SALARY%TYPE,
+commission IN FN_EMPLOYEES.COMMISION_PCT,
+manager IN FN_EMPLOYEES.MANAGER_ID,
+department IN FN.EMPLOYEES.DEPARTMENT_ID) -- selects and gets all columns an employee entry should fill
+
+
+)
+AS
+insert into FN_EMPLOYEES (fname,lname,email,phone,hiredate,jobid,salary,hiredate,jobid,salary,commission,manager,department) -- does the physical insert
+ dbms_output.put_line(jobid); -- outputs job id
+ /* not too sure on how to do the application error,something like the example we did in class where an application error is created
+ maybe use some kind if if statement where if the employee is not distinct? not too sure here */
+BEGIN
+END;

@@ -1,0 +1,125 @@
+package code;
+
+import java.util.HashMap;
+
+import util.general.CharacterFromFileReader;
+
+public class HomeWork {
+	public HashMap<String,Integer> solution(String s){
+		HashMap<String, Integer> map = new HashMap <String,Integer>();
+		int x = 0;
+		CharacterFromFileReader read = new CharacterFromFileReader(s);
+		String author = "";
+	
+		while(read.hasNext()){
+		char c = read.next();
+		switch(x){
+		case 1:
+			if (c=='{'){
+				x=2;
+			}
+			
+		break;
+		case 2:
+			if (c=='A'){
+				x=3;
+			}
+			break;
+		case 3:
+			if (c=='}'){
+				x=4;
+			}
+			break;
+		case 4:
+			if (c=='{'){
+				x=5;
+			}
+			
+			else{
+				author+=c;
+			}
+				
+			
+			
+			break;
+			case 5:
+				if (c=='a'){
+					x=6;
+				}
+				
+				else{
+					author+='{';
+					author+=c;
+					x=4;
+				}
+			
+			break;
+		case 6:
+			if (c=='}'){
+				x=0;
+			if (map.containsKey(author)){
+				int z = map.get(author);
+				map.put(author,z+1);
+				author="";
+			}
+				else{
+					map.put(author, 1);
+					
+					
+				}
+				
+				
+			
+			
+			
+			
+			}
+			if(c=='{'){
+				author+='{';
+				author+='a';
+				author+='}';
+				x=5;
+				
+				
+			}
+			
+			else{
+				author+='{';
+				author+='a';
+				author+=c;
+				x=4;
+			}	
+			
+			
+			break;
+	
+		
+			
+			
+		
+		
+		
+		}
+		
+		}
+		
+			
+		
+		
+		
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		return map;
+		
+	
+
+}
+}

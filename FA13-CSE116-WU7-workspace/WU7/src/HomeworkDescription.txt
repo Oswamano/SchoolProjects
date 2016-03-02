@@ -1,0 +1,26 @@
+CSE116 Write-Up #7
+
+You need to define two classes:
+
+code.WriteUp must define a visitor as defined below.
+tests.StudentTests must contain tests of visitor.
+
+You will need to submit to Web-CAT to get feedback.
+
+--------------------------------------------------------------------------------
+The visitor must operate over an LRStruct<String>.  It must return, as an
+Boolean, whether all the Strings in the LRStruct have even length.  The EvenLength
+class, which implements UnaryFunction<String,Boolean>, determines whether a String
+has even length.  Your solution must use EvenLength.
+
+Note that the "optional" argument of the execute method is used: it is through the
+parameter that an instance of EvenLength will be passed.
+
+HINT: The WriteUp class itself is not parameterized.  It implements
+IAlgo<Boolean,String,UnaryFunction<String,Boolean>>.
+--------------------------------------------------------------------------------
+Examples:
+The answer for the list () is true
+The answer for the list ("Fred" "Wilma") is false
+The answer for the list ("Fred" "Pebble" "Barney") is true
+--------------------------------------------------------------------------------

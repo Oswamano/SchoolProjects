@@ -1,0 +1,1 @@
+Serious issues were to be had with this project. I am not even sure if it compiles properly at this point, I would mainly just ike to ask credit for doing the design document and whatever default tests pass ( in case for some reason it does not compile or I broke everything) Thank you for your consideration.` 

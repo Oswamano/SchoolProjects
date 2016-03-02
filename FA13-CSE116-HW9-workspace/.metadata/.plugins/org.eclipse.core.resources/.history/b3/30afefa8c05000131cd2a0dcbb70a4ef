@@ -1,0 +1,17 @@
+package tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class ReferenceTests {
+
+	@Test public void test1() {
+		assertEquals("abcd",new code.Solution().question1());
+	}
+
+	@Test public void test2() {
+		assertEquals("(0,a)(0,b)(1,a)(1,b)(2,a)(2,b)",new code.Solution().question2());
+	}
+
+}

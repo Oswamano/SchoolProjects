@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;SP12-CSE116-WU4-Grading&apos; to &apos;FA12-CSE116-WU4-Grading&apos;&#x0A;- Original element: &apos;SP12-CSE116-WU4-Grading&apos;&#x0A;- Renamed element: &apos;SP12-CSE116-WU4-Grading&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;SP12-CSE116-WU4-Grading&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=SP12-CSE116-WU4-Grading" name="FA12-CSE116-WU4-Grading" references="true" stamp="1350213795328" version="1.0"/>
+</session>
